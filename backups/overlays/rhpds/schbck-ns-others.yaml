@@ -4,7 +4,7 @@ metadata:
   name: ns-others
   namespace: openshift-adp
 spec:
-  schedule: 0 14 * * * 
+  schedule: 0 12 10 * * 
   template:
     hooks: {}
     excludedNamespaces:
