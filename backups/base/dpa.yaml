@@ -29,5 +29,5 @@ spec:
         config:
           profile: default
           region: us-east-2
-          incremental: "true"
+          # incremental: "true"
         provider: aws
