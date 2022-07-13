@@ -1,0 +1,19 @@
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: ns-platform
+  namespace: openshift-adp
+spec:
+  schedule: 0 14 * * * 
+  template:
+    hooks: {}
+    includedNamespaces:
+    - open-cluster-management
+    - open-cluster-management-agent
+    - open-cluster-management-agent-addon
+    - open-cluster-management-backup
+    - open-cluster-management-hub
+    storageLocation: dpa-managed-1-1
+    defaultVolumesToRestic: true
+    includeClusterResources: false 
+    ttl: 48h0m0s
