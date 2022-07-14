@@ -4,7 +4,7 @@ metadata:
   name: only-cluster-resources
   namespace: openshift-adp
 spec:
-  schedule: 31 13 * * * 
+  schedule: 31 8 * * * 
   template:
     hooks: {}
     includedNamespaces:
